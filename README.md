@@ -1,9 +1,9 @@
 # 开发小组
 
 ---
-[![shields](https://img.shields.io/badge/README-CN-green.svg)]() 
-[![shields](https://img.shields.io/badge/README-EN-green.svg)]()
+[![shields](https://img.shields.io/teamcity/http/teamcity.jetbrains.com/s/bt345.svg)]()
 [![shields](https://img.shields.io/vso/build/larsbrinkhoff/953a34b9-5966-4923-a48a-c41874cfb5f5/1.svg)]()
+[![shields](https://img.shields.io/bithound/code/github/rexxars/sse-channel.svg)]()
 
 ## 项目：   
 
