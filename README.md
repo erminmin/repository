@@ -32,41 +32,8 @@ less
   |--- **.html
   |
 ```
-## 规范
-
-#### 命名规范
-
-文档的文件名不得含有空格。
-
-文件名必须使用半角字符，不得使用全角字符。这也意味着，中文不能用于文件名。
-
-```
-错误： 名词解释.md
-
-正确： glossary.md
-
-```
-
-文件名建议只使用小写字母，不使用大写字母。
-
-```
-错误：TroubleShooting.md
-
-正确：troubleshooting.md
-
-```
-
-为了醒目，某些说明文件的文件名，可以使用大写字母，比如`README`、`LICENSE`。
-
-文件名包含多个单词时，单词之间建议使用半角的连词线（`-`）分隔。
-
-```
-不佳：advanced_usage.md
-
-正确：advanced-usage.md
-```
-#### 注释问题   
-开发过程中,请加好注释说明，方便后台人员套模板
+## 规范   
+[![shields](https://img.shields.io/badge/%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83-GUIDE-yellow.svg)](https://github.com/DevelopmentWorkShop/repository/blob/master/GUIDE.MD)
 
 ## 网页内宽
   pc大屏 >1200px     
