@@ -1,22 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>index</title>
-<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
-    <link rel="stylesheet" href="{CSS_PATH}/index/public.css">
-    <link rel="stylesheet" href="{CSS_PATH}/index/index.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{CSS_PATH}/index/sortshow.css" />
+    <script src="{JS_PATH}/index/index.js"></script>
+    <script src="{JS_PATH}/index/iscroll-probe.js"></script>
 </head>
 <body>
-    <div class="ywm-header">
-    <img src="{IMG_PATH}/hearder.png" alt="" class="header-img">
+    <!--顶部 start-->
+    <div class="topbox">
+        <p>COMMODITIES</p>
+        <p>商品列表</p>
     </div>
-    {foreach $result $c}
-        {$c["cimgurl"]}
-        {$c["ctitle"]}
-        <a href="index.php?m=index&f=comm&a=commshow&cid={$c['cid']}">{$c["cname"]}</a>
-    {/foreach}
-    <!-- 选项卡 -->
+    <div class="dingwei">
+        <div class="dian"></div>
+        <div class="dian"></div>
+        <input type="text" placeholder="Search for..." />
+        <div class="yuyin">
+        </div>
+        <div class="line">
+            <div class="linel"></div>
+            <div class="liner"></div>
+        </div>
+    </div>
+    <!--顶部 end-->
+    <!--详情 start-->
+    <div class="xiangqing">
+        <ul class="box">
+            {foreach $result $c}
+            <li class="list">
+                <a href="index.php?m=index&f=comm&a=commshow&cid={$c['cid']}" class="bg">
+                <img src="{IMG_PATH}{$c['cimgurl']}" alt="">
+                </a>
+                <p>{$c['ctitle']}  {$c['cname']}</p>
+                <p>{$c['cintroduce']}</p>
+                <div>·······</div>
+                <p class="price">
+                    <span>{$c['cprice']} RMB</span>
+                    <span class="taoxin">{$c['caddress']}</span>
+                    <span class="xihuanrenshu">{$c['chit']}</span>
+                </p>
+                <div class="shoucang">
+                    shoucang
+                </div>
+            </li>
+            {/foreach}
+        </ul>
+    </div>
+    <!--详情 end-->
 </body>
-<script src="{JS_PATH}/index/index.js"></script>
 </html>

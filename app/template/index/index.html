@@ -35,8 +35,8 @@
         <div class="banner-ad-box">
             {foreach $post $p}
                 <a class="banner-ad" href="index.php?m=index&f=post&a=postshow&cid={$p['cid']}">
-                    <img class="ad-img" src="{IMG_PATH}{$p["pimgurl"]}" alt="">
-                    <img src="{IMG_PATH}{$p["ppngurl"]}" alt="" class="ad-title">
+                    <img class="ad-img" src="{IMG_PATH}{$p['pimgurl']}" alt="">
+                    <img src="{IMG_PATH}{$p['ppngurl']}" alt="" class="ad-title">
                 </a>
             {/foreach}
        </div>

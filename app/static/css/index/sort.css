@@ -10,7 +10,7 @@ html,body,ul,li,p,a{
 	list-style: none;
 }
 /*顶部 start*/
-.hby_topbox{
+.topbox{
 	width: 7.5rem;
 	height: 1.44rem;
 	background: #FFC019;
@@ -18,7 +18,7 @@ html,body,ul,li,p,a{
 	text-align: center;
 	font-weight: 700;
 }
-.hby_topbox p:nth-child(1){
+.topbox p:nth-child(1){
 	width: 100%;
 	padding-bottom: 0;
 	font-size: 0.28rem;
@@ -26,12 +26,12 @@ html,body,ul,li,p,a{
 	padding-top: 0.22rem;
 	height: 0.28rem;
 }
-.hby_topbox p:nth-child(2){
+.topbox p:nth-child(2){
 	width: 100%;
 	padding-top:0;
 	font-size: 0.16rem;
 }
-.hby_dingwei{
+.dingwei{
 	width: 7.02rem;
 	height: 0.93rem;
 	background: rgba(0,0,0,.8);
@@ -41,7 +41,7 @@ html,body,ul,li,p,a{
 	top: 1.41rem;
 	z-index: 1;
 }
-.hby_dingwei input{
+.dingwei input{
 	width: 3rem;
 	height: 0.49rem;
 	position: absolute;
@@ -51,22 +51,22 @@ html,body,ul,li,p,a{
 	border: 0;
 	color: #BFBFC1;
 }
-.hby_dian{
+.dian{
 	width: 0.05rem;
 	height: 0.05rem;
 	border-radius: 50%;
 	position: absolute;
 	top: 0.44rem;
 }
-.hby_dian:nth-child(1){
+.dian:nth-child(1){
 	background: #fab52a;
 	left: 0.22rem;
 }
-.hby_dian:nth-child(2){
+.dian:nth-child(2){
 	background: #19b12b;
 	left: 0.30rem;
 }
-.hby_line{
+.line{
 	width: 6.58rem;
 	height: 0.02rem;
 	background: #ccc;
@@ -74,7 +74,7 @@ html,body,ul,li,p,a{
 	left: 0.22rem;
 	bottom: 0.2rem;
 }
-.hby_linel{
+.linel{
 	width: 0.14rem;
 	height: 0.04rem;
 	background: #ccc;
@@ -82,7 +82,7 @@ html,body,ul,li,p,a{
 	left: 0;
 	top: -0.01rem;
 }
-.hby_liner{
+.liner{
 	width: 0.14rem;
 	height: 0.04rem;
 	background: #ccc;
@@ -90,7 +90,7 @@ html,body,ul,li,p,a{
 	right: 0;
 	top: -0.01rem;
 }
-.hby_yuyin{
+.yuyin{
 	width: 0.77rem;
 	height: 0.36rem;
 	background: #ccc;
@@ -101,7 +101,7 @@ html,body,ul,li,p,a{
 }
 /*顶部 end*/
 /*推荐 start*/
-.hby_tuijian{
+.tuijian{
 	width: 7.5rem;
 	height: 4.4rem;
 	background: url(../../images/1.png)no-repeat center;
@@ -109,27 +109,27 @@ html,body,ul,li,p,a{
 	background-position: 0 -0.33rem;
 	position: relative;
 }
-.hby_tbox{
+.tbox{
 	width: 7rem;
 	padding-top: 0.8rem;
 	color: #fff;
 	margin-left: 0.24rem;
 	position: relative;
 }
-.hby_tbox p:nth-child(1){
+.tbox p:nth-child(1){
 	font-size: 0.36rem;
 }
-.hby_tbox p:nth-child(2){
+.tbox p:nth-child(2){
 	font-size: 0.23rem;
 }
-.hby_tbox p:nth-child(3){
+.tbox p:nth-child(3){
 	font-size: 0.14rem;
 }
-.hby_tbox p:nth-child(5){
+.tbox p:nth-child(5){
 	font-size: 0.18rem;
 	margin-top: 0.23rem;
 }
-.hby_line1{
+.line1{
 	width: 0.74rem;
 	height: 0.04rem;
 	background: #fff;
@@ -139,7 +139,7 @@ html,body,ul,li,p,a{
 	left: 0;
 	top: 2.03rem;*/
 }
-.hby_dian1{
+.dian1{
 	width: 0.05rem;
 	height: 0.05rem;
 	background: #fff;
@@ -148,13 +148,13 @@ html,body,ul,li,p,a{
 	left: 0.78rem;
 	top: 0rem;
 }
-.hby_tbox a{
+.tbox a{
 	display: block;
 	margin-top: 0.15rem;
 	text-decoration: none;
 	color: #FFFFFF;
 }
-.hby_more{
+.more{
 	width: 0.58rem;
 	height: 0.28rem;
 	box-sizing: border-box;
@@ -163,13 +163,13 @@ html,body,ul,li,p,a{
 	position: relative;
 	font-size: 0.16rem;
 }
-.hby_more p{
+.more p{
 	position: absolute;
 	left:-0.28rem ;
 	top: -0.14rem;
 	transform: scale(0.4);
 }
-.hby_dian2{
+.dian2{
 	width: 0.05rem;
 	height: 0.05rem;
 	background: #FFFFFF;
@@ -178,7 +178,7 @@ html,body,ul,li,p,a{
 	left: -0.04rem;
 	top: 0.09rem;
 }
-.hby_dian3{
+.dian3{
 	width: 0.05rem;
 	height: 0.05rem;
 	background: #FFFFFF;
@@ -187,7 +187,7 @@ html,body,ul,li,p,a{
 	right: -0.04rem;
 	top: 0.09rem;
 }
-.hby_didian{
+.didian{
 	width: 7.5rem;
 	height: 0.95rem;
 	background: #FFFFFF;
@@ -196,7 +196,7 @@ html,body,ul,li,p,a{
 	left: 0;
 	bottom: 0;
 }
-.hby_kuang{
+.kuang{
 	width: 0.51rem;
 	height: 0.51rem;
 	background: #138540;
@@ -205,7 +205,7 @@ html,body,ul,li,p,a{
 	transform: rotate(30deg);
 	position: absolute;
 }
-.hby_tupian{
+.tupian{
 	width: 0.51rem;
 	height:0.51rem;
 	border-radius: 0.1rem;
@@ -215,26 +215,26 @@ html,body,ul,li,p,a{
 	left: 0.24rem;
 	top: 0.21rem;
 }
-.hby_didian p:nth-child(3){
+.didian p:nth-child(3){
 	font-size: 0.32rem;	
 	margin-left: 1rem;
 	margin-top: 0.1rem;
 	font-weight: bold;
 }
-.hby_didian p:nth-child(4){
+.didian p:nth-child(4){
 	font-size: 0.22rem;	
 	margin-left: 1rem;
 	font-weight: bold;
 	color: #333;
 }
-.hby_circlebox{
+.circlebox{
 	width: 1.3rem;
 	height: 0.5rem;
 	position: absolute;
 	right: 0.35rem;
 	top: 0;
 }
-.hby_circle{
+.circle{
 	width: 0.24rem;
 	height: 0.24rem;
 	border-radius: 50%;
@@ -242,7 +242,7 @@ html,body,ul,li,p,a{
 	margin-top: 0.22rem;
 	box-shadow:  0 0 5px rgba(0,0,0,0.3);
 }
-.hby_difang{
+.difang{
 	font-size: 0.12rem;
 	position: absolute;
 	left: 0.24rem;
@@ -250,55 +250,15 @@ html,body,ul,li,p,a{
 }
 /*推荐 end*/
 /*楼层 start*/
-.hby_floor{
+.floor{
 	width: 7.5rem;
 	height: 3.8rem;
-	background:url(../../images/2.png) no-repeat center;
 	background-size:cover ;
 	position: relative;
 	text-align: center;
 	margin-bottom: 0.12rem;
 }
-div.hby_floor2{
-	background: url(../../images/5.png)no-repeat center;
-	background-size:cover ;
-}
-div.hby_floor2 .hby_title{
-	background: rgba(42,143,189,0.8);
-}
-div.hby_floor2 .hby_titlecenter{
-	background: #0683b1;
-}
-div.hby_floor2 .hby_add{
-	background: #0683b1;
-}
-div.hby_floor3{
-	background: url(../../images/6.png)no-repeat center;
-	background-size:100% 100% ;
-}
-div.hby_floor3 .hby_titlecenter{
-	background: #b10670;
-}
-div.hby_floor3 .hby_title{
-	background: rgba(184,18,116,0.8);
-}
-div.hby_floor3 .hby_add{
-	background: #b10670;
-}
-div.hby_floor4{
-	background: url(../../images/7.png)no-repeat center;
-	background-size:100%;
-}
-div.hby_floor4 .hby_title{
-	background: #f7c12d;
-}
-div.hby_floor4 .hby_titlecenter{
-	background: #ffc019;
-}
-div.hby_floor4 .hby_add{
-	background: #ffc019;
-}
-.hby_title{
+.title{
 	width: 6.12rem;
 	height: 0.52rem;
 	position: absolute;
@@ -308,14 +268,14 @@ div.hby_floor4 .hby_add{
 	background: rgba(67,213,18,0.8);
 	overflow: hidden;
 }
-.hby_titleleft{
+.titleleft{
 	width: 33.3333%;
 	height: 100%;
 	float: left;
 	background: url(../../images/4.png)no-repeat center;
 	background-size:cover ;
 }
-.hby_titlecenter{
+.titlecenter{
 	width: 33.3333%;
 	height: 100%;
 	float: left;
@@ -326,7 +286,7 @@ div.hby_floor4 .hby_add{
 	color: #FFFFFF;
 	position: relative;
 }
-.hby_titleright{
+.titleright{
 	width: 33.3333%;
 	height: 100%;
 	float: left;
@@ -334,25 +294,25 @@ div.hby_floor4 .hby_add{
 	background-size:cover;
 	position: relative;
 }
-.hby_titleright span{
+.titleright span{
 	font-size: 0.2rem;
 	position: absolute;
 	left: 0.68rem;
 	top: 0.1rem;
 	color:#fff;
 }
-.hby_floor p{
+.floor p{
 	font-size: 0.32rem;
 	font-weight: 700;
 	color: #FFFFFF;
 }
-.hby_floor p.hby_one{
+.floor p.one{
 	padding-top: 1.45rem;
 }
-.hby_floor p:nth-last-child(1){
+.floor p:nth-last-child(1){
 	font-size: 0.4rem;
 }
-.hby_add{
+.add{
 	width: 1.04rem;
 	height: 0.45rem;
 	border-radius: 2rem;
@@ -367,7 +327,7 @@ div.hby_floor4 .hby_add{
 }
 /*楼层 end*/
 /*底部 start*/
-/*.hby_dibu{
+/*.dibu{
 	width: 7.5rem;
 	height: 0.96rem;
 	background: #2e3641;

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 2017-04-11 06:02:20
+-- Generation Time: 2017-04-11 09:58:14
 -- 服务器版本： 5.6.17
 -- PHP Version: 5.5.12
 
@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `commodity` (
   `sid` int(10) NOT NULL COMMENT '分类id',
   `chit` int(10) NOT NULL,
   PRIMARY KEY (`cid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='商品表' AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='商品表' AUTO_INCREMENT=7 ;
 
 --
 -- 转存表中的数据 `commodity`
@@ -70,8 +70,10 @@ CREATE TABLE IF NOT EXISTS `commodity` (
 INSERT INTO `commodity` (`cid`, `ctitle`, `cimgurl`, `cname`, `cnew`, `cintroduce`, `cprice`, `uid`, `ctime`, `caddress`, `sid`, `chit`) VALUES
 (1, '手表', '', '低调奢华，引领时代潮流', '九成新', '很棒！', 268, 1, '2017-04-08 07:14:34', '', 0, 0),
 (2, '化妆品', '', '', '', '', 0, 0, '2017-04-08 07:16:34', '', 0, 1),
-(3, 'Louis', '', 'Vuitton', '九成新', '低调的奢华，引领时代潮流', 268, 1, '2017-04-10 01:23:36', '', 4, 8),
-(4, 'Calvin', '', 'klein', '九成新', '皇帝的尊贵，白领的享受', 268, 1, '2017-04-10 01:25:06', '', 4, 21);
+(3, 'Louis', '/clothes1.png', 'Vuitton', '九成新', '低调的奢华，引领时代潮流', 268, 1, '2017-04-10 01:23:36', '', 4, 9),
+(4, 'Calvin', '/clothes2.png', 'klein', '九成新', '皇帝的尊贵，白领的享受', 268, 1, '2017-04-10 01:25:06', '', 4, 21),
+(5, 'Chris', '/clothes3.png', 'tiandior', '九成新', '只为阳刚打造，品味商务人生', 268, 0, '2017-04-11 07:10:57', '', 4, 0),
+(6, 'Valen', '/clothes4.png', 'tino', '九成新', '成功更轻松，男人更精彩', 268, 0, '2017-04-11 07:10:57', '', 4, 0);
 
 -- --------------------------------------------------------
 
@@ -185,8 +187,11 @@ CREATE TABLE IF NOT EXISTS `sort` (
   `sname` varchar(255) NOT NULL COMMENT '分类名',
   `simgurl` varchar(255) NOT NULL,
   `stitle` varchar(255) NOT NULL,
+  `sinfo` varchar(255) NOT NULL,
   `scon` varchar(255) NOT NULL,
   `shit` int(10) NOT NULL,
+  `scolor` varchar(255) NOT NULL,
+  `srgb` varchar(255) NOT NULL,
   PRIMARY KEY (`sid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='分类表';
 
@@ -194,11 +199,11 @@ CREATE TABLE IF NOT EXISTS `sort` (
 -- 转存表中的数据 `sort`
 --
 
-INSERT INTO `sort` (`sid`, `sname`, `simgurl`, `stitle`, `scon`, `shit`) VALUES
-(1, '美容', '', '', '', 3),
-(2, '母婴', '', '', '', 9),
-(3, '数码', '', '', '', 2),
-(4, '服饰', '', '', '', 52);
+INSERT INTO `sort` (`sid`, `sname`, `simgurl`, `stitle`, `sinfo`, `scon`, `shit`, `scolor`, `srgb`) VALUES
+(1, '美容', '/sort1.png\r\n', 'M A K E U P', 'THIS IS OUR CONTRIBUTION TO BEAUTY', '这是我们对美的贡献', 3, '#50c013', 'rgba(67,213,18,0.8)'),
+(2, '母婴', '/sort2.png\r\n', 'M A T E R N A L', 'THIS IS OUR CONTRIBUTION TO BEAUTY', '关于爱，用心爱，值得爱', 12, '#0683b1', 'rgba(42,143,189,0.8)'),
+(3, '数码', '/sort3.png\r\n', 'S H U M A', 'THIS IS OUR CONTRIBUTION TO BEAUTY', '你也许不在乎，我必须在意', 11, '#b10670', 'rgba(184,18,116,0.8)'),
+(4, '服饰', '/sort4.png\r\n', 'C L O T H E S', 'THIS IS OUR CONTRIBUTION TO BEAUTY', '你的生活，从这里改变', 129, '#ffc019', '#f7c12d');
 
 -- --------------------------------------------------------
 

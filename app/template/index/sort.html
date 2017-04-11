@@ -1,22 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>index</title>
-<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
-    <link rel="stylesheet" href="{CSS_PATH}/index/public.css">
-    <link rel="stylesheet" href="{CSS_PATH}/index/index.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{CSS_PATH}/index/sort.css" />
+    <script src="{JS_PATH}/index/zepto.js"></script>
+    <script src="{JS_PATH}/index/index.js"></script>
+    <script src="{JS_PATH}/index/iscroll-probe.js"></script>
 </head>
+<script>
+    $(document).ready(function() {
+        size(750, "x");
+    })
+</script>
 <body>
-    <div class="ywm-header">
-    <img src="{IMG_PATH}/hearder.png" alt="" class="header-img">
+    <!--顶部 start-->
+    <div class="topbox">
+        <p>分 x 类</p>
+        <p>CLASSIFICATION</p>
     </div>
+    <div class="dingwei">
+        <div class="dian"></div>
+        <div class="dian"></div>
+        <input type="text" placeholder="Search for..." />
+        <div class="yuyin">
+            
+        </div>
+        <div class="line">
+            <div class="linel"></div>
+            <div class="liner"></div>
+        </div>  
+    </div>
+    <!--顶部 end-->
+    <!--推荐 start-->
+    <div class="tuijian">
+        <div class="tbox">
+            <p>找 不 到 ？</p>
+            <p>RECOMMENDED FOR YOU</p>
+            <p>JUST FOR  SIMPLE</p>
+            <div class="line1">
+                <div class="dian1"></div>
+            </div>
+            <p>看看二货的推荐吧</p>
+            <a href="">
+                <div class="more">
+                    <p>MORE</p>
+                    <div class="dian2"></div>
+                    <div class="dian3"></div>
+                </div>
+            </a>
+        </div>
+        <div class="didian">
+            <div class="kuang">
+            </div>
+            <div class="tupian">  
+            </div>
+            <p>BEAUTIFCHRIST</p>
+            <p>生活是不断需要进步而非简单享乐的过程</p>
+            <div class="circlebox">
+                <div class="circle">
+                </div>
+                <div class="difang">
+                    TaiYuan.S.X
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--推荐 end-->
+    <!--楼层start-->
     {foreach $sortlist $s}
-        {$s["simgurl"]}
-        {$s["shit"]}
-        <a href="index.php?m=index&f=sort&a=sortshow&sid={$s['sid']}">{$s["sname"]}</a>
+    <!-- PHP链接、背景图  -->
+    <a href="index.php?m=index&f=sort&a=sortshow&sid={$s['sid']}" class="floor" style="background: url({IMG_PATH}{$s['simgurl']});">
+    <!-- PHP底部背景色 -->
+        <div class="title"  style="background:{$s['srgb']};">
+            <div class="titleleft">  
+            </div>
+            <!-- PHP背景色、内容 -->
+            <div class="titlecenter" style="background-color:{$s['scolor']}; >{$s['sname']}">
+            </div>
+                <div class="dian4"></div>
+                <div class="dian5"></div>
+            </div>
+            <div class="titleright">
+                <span>{$s['shit']}</span>
+            </div>
+        </div>
+        <p class="one">
+            {$s['stitle']}
+        </p>
+        <p>{$s['sinfo']}</p>
+        <p>{$s['scon']}</p>
+        <div class="add" style="background-color:{$s['scolor']}; ">
+            <span>+</span>
+        </div>
+    </a>
     {/foreach}
-    <!-- 选项卡 -->
+    <!--楼层 end-->
+    <!--楼层 end-->
+    <!--底部 start-->
+    <div class="dibu">
+        
+    </div>
+    <!--底部 end-->
 </body>
-<script src="{JS_PATH}/index/index.js"></script>
 </html>
