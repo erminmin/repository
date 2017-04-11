@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+.wrap{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+}
+.wrap img{
+    width: 100%;
+    height: 100%;
+}
+.zhezhao{
+    width:100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.box{
+    position: absolute;
+    top:1.2rem;
+    left: 0;
+    width: 100%;
+    height:9.5rem;
+    text-align: center;
+}
+.box1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 6rem;
+    height: 7.8rem;
+    background: #fff;
+    border-radius: 0.2rem;
+    z-index: 1;
+}
+.box1 img{
+    margin-top: 0.13rem;
+    width: 100%;
+    height: 4.15rem;
+}
+.box2{
+    position: absolute;
+    top:0.21rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 6.55rem;
+    height:8.5rem;
+    background: #fff;
+    border-radius: 0.2rem;
+    z-index: 2;
+}
+.box2 img{
+    margin-top: 0.13rem;
+    width: 100%;
+    height: 4.56rem;
+
+
+}
+.box3{
+    position: absolute;
+    top: 0.55rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width:7rem;
+    height: 8.92rem;
+    background: #fff;
+    border-radius: 0.2rem;
+    z-index: 3;
+}
+.box3 .img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:4.9rem ;
+    border-radius: 0.2rem;
+}
+.box3 .img img{
+    width: 100%;
+    height:100%;
+    border-radius: 0.2rem;
+}
+.box3 .tj{
+    position: absolute;
+    bottom:-0.54rem;
+    right: 0.66rem;
+    border-radius: 50%;
+    width: 0.9rem;
+    height: 0.9rem;
+    border: 0.01rem solid #fff;
+    box-shadow: 0 0 0.02rem #fff;
+    background: #fec019;
+    text-align: center;
+    color: #fff;
+    font-size:0.5rem;
+    font-weight: bold;
+    line-height:0.9rem;
+}
+.box3 .font{
+    position: absolute;
+    top:5rem ;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    padding: 0 0.35rem;
+}
+.font .en{
+    color: #373d44;
+    font-size: 0.16rem;
+    font-weight: bold;
+}
+.font p{
+    margin-top: 0.18rem;
+    font-size: 0.16rem;
+}
+.font p.money span{
+    color: red;
+    font-size: 0.3rem;
+    font-weight: bold;
+}
+.logo{
+    position: absolute;
+    top:7.56rem;
+    left: 0.35rem;
+    width: 6.16rem;
+    height: 1.1rem;
+    border-bottom: 0.03rem solid #fddd8a;
+    border-top: 0.03rem solid #fddd8a;
+}
+.logo .left{
+    float: left;
+    width: 1.89rem;
+    height: 100%;
+    position:relative ;
+    border-right:0.03rem solid #fddd8a ;
+}
+.logo .left .inner{
+    width: 0.7rem;
+    height:0.7rem;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.logo .left .inner img{
+    width: 100%;
+    height: 100%;
+}
+.logo .right{
+    float: right;
+    height: 100%;
+    width: 4.24rem;
+}
+.logo .right .inner1{
+    float: left;
+    margin-left:0.8rem;
+    margin-top:-0.1rem;
+    width: 0.45rem;
+    height:0.45rem;
+}
+.logo .right .inner1 img{
+    width: 100%;
+    height: 100%;
+}
+.logo .right .inner{
+    float: left;
+    margin-left:0.2rem;
+    margin-top:-0.1rem;
+    width: 0.45rem;
+    height:0.45rem ;
+}
+.logo .right .inner img{
+    width: 100%;
+    height: 100%;
+}
+.go{
+    position: absolute;
+    top: 11rem;
+    left:0;
+    right: 0;
+    margin: auto;
+    width: 7rem;
+    height: 0.9rem;
+    background:#1aad21 ;
+    border: 0.01rem solid #fff;
+    border-radius:0.2rem ;
+    box-shadow: 0 0 0.02rem #fff;
+    text-align: center;
+    line-height: 0.8rem;
+}
+.go .gw{
+    width: 0.56rem;
+    height:0.5rem;
+    float: left;
+    margin-left:2.7rem ;
+
+}
+.go .gw img{
+    width: 100%;
+    height: 100%;
+}
+.go .shop{
+    float: left;
+    margin-top:0.08rem ;
+    margin-left:0.12rem ;
+    color: #fff;
+    font-size: 0.16rem;
+}

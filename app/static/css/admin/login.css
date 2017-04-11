@@ -1,0 +1,115 @@
+        span {
+            color: #fff;
+            font-family:Arial, "Microsoft Yahei";
+        }
+        div {
+            display: inline;
+            color: #fff;
+            font-family:Arial, "Microsoft Yahei";
+        }
+        *{
+        	margin: 0;
+        	padding: 0;
+        	list-style: none;
+        }
+        body,html{
+            width: 100%;
+            height: 100%;
+        }
+        #gradient .bannerbox{
+        	width:100%;
+        	height: 100%;
+        }
+		.bannerbox{
+			width: 100%;
+			height: 100%;
+			position: relative;
+		}
+		.bannerbox li{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top:0;
+			opacity: 0;
+		}
+		.bannerbox li:nth-child(1){
+			background: url(../../images/210e7341dea61bb27265d05a423b8c5f.jpg);
+			background-size: cover;
+			opacity: 1;
+		}
+		.bannerbox li:nth-child(2){
+			background: url(../../images/4273d687775fe7a0d9eccfd6da656a08.jpg);
+			background-size: cover;
+		}
+		.bannerbox li:nth-child(3){
+			background: url(../../images/84f43c3da28e15ed6712d19ac1a069c6.jpg);
+			background-size: cover;
+		}
+		.bannerbox li:nth-child(4){
+			background: url(../../images/a83eee4436646d98434f5f74630563b9.jpg);
+			background-size: cover;
+		}
+		.bannerbox li:nth-child(5){
+			background: url(../../images/b14359a3abb6b75a8565574e05b2943d.jpg);
+			background-size: cover;
+		}
+        form input{
+            border:0;
+            border-radius: 5px;
+            background:#E0FACB;
+        }
+        form input:nth-of-type(3){
+            width:81px;
+        }
+        form input:nth-last-of-type(1){
+            background:#27E02E;
+            color: #fff;
+            width: 150px;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .box{
+            background: #253a47;
+            height:320px;
+            width:400px;
+            padding-top:10px;
+            margin:auto;
+            position:fixed;
+            left:450px;top:0;right:0;bottom:100px;
+            line-height:35px;
+            text-align:center;
+            box-shadow: 0 0 0px 3px rgba(0,0,0,0.03);
+            opacity: 0.8;
+        }
+
+        h3{
+            font-family:Arial, "Microsoft Yahei";
+            color: #fff;
+            text-align:center;
+            height:40px;
+            line-height:40px;
+            background: yellowgreen;
+        }
+        a{
+            font-size: 14px;
+            text-decoration: none;
+            color:#bbb;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: orange;
+        }
+        .box img{
+            padding-top:20px;  
+        }
+        span{
+            width: 15px;
+            z-index: 300;
+            font-size: 24px;
+            color: orange;
+            padding: 0 10px;
+        }

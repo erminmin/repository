@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{CSS_PATH}/bootstrap.min.css">
+    <style>
+        .page{
+            text-align:Center;
+            line-height:50px;
+        }
+        .page a{
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+        <table class="table text-center">
+            <tr>
+                <th>id</th>
+                <th>标题</th>
+                <th>地址</th>
+                <th>内容</th>
+                <th>发布时间</th>
+                <th>点击量</th>
+            </tr>
+            <!--
+            select * from shows inner join user on shows.uid=user.uid;
+            -->
+            {foreach  $result as $v}
+            <tr>
+                <td>{$v["hid"]}</td>
+                <td>{$v["htitle"]}</td>
+                <td>{$v["haddress"]}</td>
+                <td>{$v["hcontent"]}</td>
+                <td>{$v["htime"]}</td>
+                <td>{$v["hhit"]}</td>
+                <td>
+                    <a href="index.php?m=admin&f=headline&a=statuheadline&hid={$v['hid']}">查看</a>
+                    <a href="index.php?m=admin&f=headline&a=delheadline&hid={$v['hid']}">删除</a>
+                </td>
+            </tr>
+
+            {/foreach}
+
+
+        </table>
+
+        <div class="page">
+            {$pages}
+        </div>
+
+</body>
+</html>

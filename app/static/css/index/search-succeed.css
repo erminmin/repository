@@ -1,0 +1,331 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+.zk_successbox{
+    width: 7.5rem;
+    height: auto;
+    background: #f5f5f5;
+}
+.zk_successbox:before,:after{
+    content:""  ;
+    clear:both;
+    display:block;
+
+}
+/*头部*/
+.zk_headbox{
+    width:7.5rem;
+    height: 3.1rem;
+    background: #fec019;
+}
+.zk_sosobox{
+    width:7.5rem;
+    height:0.98rem;
+}
+.zk_sosobox>.aa{
+    width:0.88rem;
+    height:0.88rem;
+    border:0;
+    background: url(../../images/1.png);
+    background-size: contain;
+    float: left;
+}
+.zk_sosobox>.sosoimg{
+    width: 2.24rem;
+    height:100%;
+    float:left;
+    margin-left:1.7rem;
+}
+.zk_sosobox>.sosoimg>img{
+    width:2.24rem;
+    float:left;
+    margin-top:0.21rem;
+}
+.zk_sosobox>img{
+    width:0.88rem;
+}
+.zk_searchbox{
+    width:7.02rem ;
+    height: 0.91rem;
+    margin:0 auto;
+    background: #222b34;
+    border-radius:4px;
+    border-top:2px solid #d2a21e;
+    border-bottom:1px solid #d2a21e;
+}
+.zk_innerbox{
+    width:6.58rem;
+    height: 0.52rem;
+    margin:0.18rem auto 0;
+    border-bottom:2px solid #7a7a7a;
+    position: relative;
+}
+.zk_innerbox>.leftbox{
+    width:1.7rem;
+    height: 100%;
+    float:left;
+}
+.zk_innerbox>.leftbox>img{
+    float:left;
+    width:0.16rem;
+    margin-top:0.2rem;
+}
+.zk_innerbox>.leftbox>span{
+    float:left;
+    width:1.2rem;
+    height: 0.14rem;
+    font-size: 0.1rem;
+    margin-left:0.1rem;
+    margin-top:0.1rem;
+    color:#b9babb;
+}
+.zk_innerbox>.rightbox{
+    width:1.55rem;
+    height:100%;
+    float:right;
+}
+.zk_innerbox>.rightbox>img{
+    height:0.28rem;
+    float:left;
+    margin-top:0.1rem;
+}
+.zk_innerbox>.rightbox>img:nth-child(2){
+    margin:0.1rem 0.29rem 0;
+    height:0.29rem;
+}
+.zk_innerbox>.rightbox>img:nth-child(3){
+    height:0.31rem;
+}
+.zk_innerbox>.lk{
+    width:0.14rem;
+    height: 0.04rem;
+    background: #525a61;
+    position:absolute;
+    left: 0;
+    bottom:-2px;
+    z-index: 3;
+}
+.zk_innerbox>.rk{
+    width:0.14rem;
+    height: 0.04rem;
+    background: #525a61;
+    position:absolute;
+    right: 0;
+    bottom:-2px;
+    z-index: 3;
+}
+.zk_selectbox{
+    width: 7.02rem;
+    height: 0.8rem;
+    margin:0.32rem auto 0;
+}
+.zk_selectbox>.imgbox{
+    width:0.46rem;
+    height: 0.56rem;
+    float:left;
+    margin-right:0.1rem;
+}
+.zk_selectbox>.imgbox>img{
+    width:0.46rem;
+    float:left;
+    margin-top:0.1rem;
+}
+.zk_selectbox>.word{
+    width:2.88rem;
+    height: 0.58rem;
+    float:left;
+}
+.zk_selectbox>.word>h1{
+    font-size: 0.28rem;
+    color:#59381a;
+}
+.zk_selectbox>.word>p{
+    font-size: 0.16rem;
+    color:#a77a1a;
+}
+.zk_selectbox>span{
+    float: right;
+    font-size: 0.26rem;
+    color:#59381a;
+    margin-top:0.28rem;
+    font-weight:bold;
+}
+/*推荐*/
+.zk_tuijianbox{
+    width: 100%;
+    height:1.4rem;
+}
+.zk_tubox{
+    width:2.83rem;
+    height:1.4rem;
+    margin:0 auto;
+}
+.zk_tubox>p{
+    font-size: 0.28rem;
+    font-weight:bold;
+    margin-left:0.67rem;
+    margin-top:0.36rem;
+    color:#fec019;
+    float:left;
+}
+.zk_tubox>img{
+    width: 2.83rem;
+    float:left;
+}
+/*帽子君*/
+.zk_hatoutbox{
+    width:7.02rem;
+    height: 6.13rem;
+    background: #20af26;
+    margin:0 auto 11px;
+    border-radius: 5px;
+}
+.zk_hatbox{
+    width:7.02rem;
+    height: 5.71rem;
+    background: #fff;
+    border-radius: 5px;
+    padding-top:0.35rem;
+}
+.zk_hatbox>.headhatbox{
+    width: 6.56rem;
+    height: 1.01rem;
+    margin:0 auto;
+}
+.zk_hatbox>.headhatbox>.imgbox{
+    width:0.8rem;
+    height: 0.8rem;
+    border-radius:50%;
+    overflow: hidden;
+    float:left;
+    margin-right: 0.1rem;
+}
+.zk_hatbox>.headhatbox>.imgbox>img{
+    width:0.8rem;
+    float: left;
+}
+.zk_hatbox>.headhatbox>.word{
+    width:3.4rem;
+    height: 0.8rem;
+    float:left;
+}
+.zk_hatbox>.headhatbox>.word>h2{
+    font-size: 0.24rem;
+    margin-top:0.05rem;
+}
+.zk_hatbox>.headhatbox>.word>b{
+    width:0.78rem;
+    border:0.03rem dotted #e3e3e3;
+    float:left;
+    margin:0.05rem 0;
+}
+.zk_hatbox>.headhatbox>.word>p{
+    font-size: 0.18rem;
+    float:left;
+}
+.zk_hatbox>.headhatbox>.time{
+    width:1.4rem;
+    height: 0.29rem;
+    float:right;
+    margin-top:0.42rem;
+}
+.zk_hatbox>.headhatbox>.time>img{
+    float: left;
+    width:0.23rem;
+    margin-top:0.05rem;
+    margin-right: 0.05rem;
+}
+.zk_hatbox>.headhatbox>.time>span{
+    float: left;
+    font-size:0.12rem;
+    color:#c7c7c7;
+}
+.zk_bannerbox{
+    width:100%;
+    height: 2.95rem;
+    position: relative;
+}
+.zk_bannerbox>img{
+    width:100%;
+}
+.zk_bannerbox>.xinbox{
+    width: 0.96rem;
+    height: 0.96rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 0.58rem;
+    bottom:-0.38rem;
+}
+.zk_bannerbox>.xinbox>img{
+    width: 0.96rem;
+    height: 0.96rem;
+}
+.zk_money{
+    width:100%;
+    height: 0.4rem;
+    margin-top:0.3rem;
+}
+.zk_money>p{
+    float: left;
+    font-size: 0.16rem;
+    color:#9ca0a5;
+    padding-left:0.2rem;
+}
+.zk_money>p>img{
+    height: 0.34rem;
+}
+.zk_userbox{
+    width:100%;
+    height: 0.6rem;
+    margin-top:0.2rem;
+}
+.zk_userleftbox{
+    width:3.1rem;
+    height:0.6rem;
+    float: left;
+}
+.zk_userleftbox>img{
+    width:0.6rem;
+    float:left;
+    margin-left:-0.27rem;
+}
+.zk_userleftbox>img:nth-child(1){
+    margin-left:0.2rem;
+}
+.zk_userleftbox>.shuzi{
+    width: 0.5rem;
+    height:0.5rem;
+    border-radius: 50%;
+    float:left;
+    background: #1bad22;
+    border:2px solid #fff;
+    margin-left:-0.27rem;
+    color:#fff;
+    font-size:0.12rem;
+    text-align:center;
+    line-height: 0.5rem;
+}
+.zk_userrightbox{
+    width: 3.25rem;
+    height: 0.4rem;
+    float: right;
+    margin-top:0.1rem;
+}
+.zk_userrightbox>.eyesbox{
+    width: 1.5rem;
+    height: 100%;
+    float:left;
+    margin-left:0.1rem;
+}
+.zk_userrightbox>.eyesbox>img{
+    height: 0.39rem;
+    float:left;
+}
+.zk_userrightbox>.eyesbox>span{
+    font-size: 0.2rem;
+    color:#20af26;
+    float:left;
+    line-height: 0.4rem;
+}

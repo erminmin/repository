@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{CSS_PATH}/bootstrap.min.css">
+    <link rel="stylesheet" href="{CSS_PATH}/admin/public.css">
+    <link rel="stylesheet" href="{CSS_PATH}/admin/addUser.css">
+    <script src="{JS_PATH}/jquery-min.js"></script>
+    <script src="{JS_PATH}/jquery.validate.js"></script>
+    <script src="{JS_PATH}/admin/addUser.js"></script>
+</head>
+<body>
+<form action="index.php?m=admin&f=user&a=addUserInfo" method="post" id="form" class="form-horizontal">
+    <form>
+        <div class="form-group">
+            <label for="name">用&nbsp;&nbsp;户&nbsp;&nbsp;名：</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div class="form-group">
+            <label for="pass">密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</label>
+            <input type="password" name="pass" id="pass">
+        </div>
+        <div class="form-group">
+            <label for="pass2">确认密码：</label>
+            <input type="password" name="pass2" id="pass2">
+        </div>
+        <div class="select">
+            <lable for="role">角&nbsp;&nbsp;&nbsp;色：</lable>
+            <select name="role" id="role">
+                <option value="0">管理员</option>
+                <option value="1" selected="selected">用户</option>
+            </select><br/>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+</form>
+</body>
+</html>

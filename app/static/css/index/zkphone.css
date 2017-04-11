@@ -1,0 +1,15 @@
+*{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+/*头部*/
+.zk_headbox{
+    width:7.5rem;
+    height: 3.09rem;
+    background: #fec019;
+}
+.zk_sosobox{
+    width:7.5rem;
+    height:0.98rem;
+}

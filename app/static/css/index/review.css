@@ -1,0 +1,87 @@
+body{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+}
+.haohuimin_review_header{
+	width: 100%;
+	height: 2.4rem;
+	background-color: #fec019;
+	display: flex;
+	justify-content: space-between;
+}
+.haohuimin_review_header div{
+	margin-top: 0.65rem;
+	display: flex;
+	font-size: 0.28rem;
+	font-weight: bold;
+}
+.haohuimin_review_header div:nth-child(1){
+	margin-left: 0.24rem;
+}
+.haohuimin_review_header div:nth-child(2){
+	flex-direction: column;
+	align-content: center;
+	margin-right: 2.3rem;	
+}
+.haohuimin_review_header div:nth-child(2) span{
+	color: #59381a;
+	text-align: center;
+	text-shadow: 0.01rem 0.01rem 0 #fff;
+}
+.haohuimin_review_header div:nth-child(2) span:nth-child(2){
+	font-size: 0.16rem;
+	font-weight: normal;
+}
+.haohuimin_review_content{
+	width: 100%;
+	height: 100vh;
+	border-radius: 0.2rem 0.2rem 0 0;
+	background-color: #f1f1f1;
+	margin-top: -0.2rem;
+}
+.haohuimin_review_content div:nth-child(1){
+	font-size: 0.26rem;
+	padding: 0.4rem;
+}
+.haohuimin_review_content div:nth-child(2) img:nth-child(1){
+	width: 1.2rem;
+	height: 1.2rem;
+	display: block;
+	float: left;
+	margin-left: 0.42rem;
+	margin-top: 1.3rem;	
+}
+.haohuimin_review_content .haohuimin_write{
+	width: 5.5rem;
+	height: 1.5rem;
+	float: left;
+	border-top: 0.03rem solid #cccccc;
+	margin-top:1.9rem;
+}
+.haohuimin_review_content .haohuimin_write img{
+	display: block;
+	padding-top: 0.1rem;
+}
+
+.haohuimin_review_content div.haohuimin_write img:nth-child(1){
+	float: left;
+	width: 0.38rem;
+	height: 0.48rem;
+	margin-left: 4.1rem;
+	margin-top: 0rem;
+}
+.haohuimin_review_content .haohuimin_write img:nth-child(2){
+	float: left;
+	margin-top: 0.05rem;
+	margin-left: 0.2rem;
+	height: 0.4rem;
+}
+.haohuimin_review_content .haohuimin_write img:nth-child(3){
+	float: left;
+	width: 0.48rem;
+	height: 0.48rem;
+	margin-left: 0.2rem;
+	
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+<meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
+    <link rel="stylesheet" href="{CSS_PATH}/index/public.css">
+    <link rel="stylesheet" href="{CSS_PATH}/index/index.css">
+</head>
+<body>
+    <div class="ywm-header">
+    <img src="{IMG_PATH}/hearder.png" alt="" class="header-img">
+    </div>
+    {foreach $sortlist $s}
+        {$s["simgurl"]}
+        {$s["shit"]}
+        <a href="index.php?m=index&f=sort&a=sortshow&sid={$s['sid']}">{$s["sname"]}</a>
+    {/foreach}
+    <!-- 选项卡 -->
+</body>
+<script src="{JS_PATH}/index/index.js"></script>
+</html>

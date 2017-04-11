@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        table{
+            width:800px;
+            border:1px solid #000000;
+            border-collapse:collapse;
+            margin:0 auto;
+            margin-top:40px;
+        }
+        tr,td{
+            height:26px;
+            border:1px solid #000;
+            line-height:26px;
+        }
+        td{
+            padding-left:15px;
+            overflow:hidden;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <th>分类id</th>
+        <th>分类名称</th>
+        <th>分类图片</th>
+        <th>编辑</th>
+    </tr>
+
+
+    {foreach $sort as $v}
+    <tr>
+        <td>{$v["sid"]}</td>
+        <td>{$v["sname"]}</td>
+        <td>{$v["simgurl"]}</td>
+        <td>
+            <a href="index.php?m=admin&f=sort&a=delsort&sid={$v['sid']}">删除</a>
+            <a href="index.php?m=admin&f=sort&a=editsort&sid={$v['sid']}">编辑</a>
+        </td>
+    </tr>
+    {/foreach}
+
+</table>
+</body>
+</html>

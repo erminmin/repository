@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <meta name="viewport" content="width=device-width,initial-scale=0.5,minimum-scale=0.5,maximum-scale=0.5,user-scalable=no" />
+    <link rel="stylesheet" href="{CSS_PATH}/index/public.css">
+    <link rel="stylesheet" href="{CSS_PATH}/index/index.css">
+    <script src="{JS_PATH}/index/index.js"></script>
+</head>
+<body>
+<div class="header">
+    <img src="{IMG_PATH}/hearder.png" alt="" class="header-img">
+</div>
+<div class="search"></div>
+<div class="top">
+    <img class="top-img" src="{IMG_PATH}/index-top.jpg" alt="">
+</div>
+<div class="hot">
+    <div class="top-box">
+        <div class="top-box-img"></div>
+        <div class="top-box-title">{$headline["htitle"]}</div>
+        <div class="top-box-text">{$headline["hcontent"]}</div>
+        <div class="top-box-address">{$headline["haddress"]}</div>
+        <div class="top-box-time">{$headline["htime"]}</div>
+    </div>
+    <div class="top-box box2"></div>
+    <div class="top-box box3"></div>
+</div>
+<div class="banner">
+    <div class="banner-title">
+        <img src="{IMG_PATH}/recommendation.png" alt="">
+    </div>
+    <div class="banner-box">
+        <div class="banner-ad-box">
+            {foreach $post $p}
+                <a class="banner-ad" href="index.php?m=index&f=post&a=postshow&cid={$p['cid']}">
+                    <img class="ad-img" src="{IMG_PATH}{$p["pimgurl"]}" alt="">
+                    <img src="{IMG_PATH}{$p["ppngurl"]}" alt="" class="ad-title">
+                </a>
+            {/foreach}
+       </div>
+    </div>
+</div>
+<div class="change">
+    <div class="change-title">
+        <img src="{IMG_PATH}/change.png" alt="">
+    </div>
+    <div class="change-box">
+    {foreach $sortlist $s}
+            <a class="box-body" href="index.php?m=index&f=sort&a=sortshow&sid={$s['sid']}"></a>
+        <div class="box-body"></div>
+    {/foreach}
+    </div>
+</div>
+    <!-- 选项卡 -->
+<!--     <a href="index.php">1</a>
+    <a href="index.php?m=index&f=sort">2</a>
+    <a href="index.php?m=index&f=art&a=artshow&sid={$s['sid']}">3</a>
+    <a href="index.php?m=index&f=art&a=artshow&sid={$s['sid']}">4</a> -->
+</body>
+<script src="js/index/index.js"></script>
+</html>

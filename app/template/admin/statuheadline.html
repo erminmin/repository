@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{CSS_PATH}/bootstrap.min.css">
+    <link rel="stylesheet" href="{CSS_PATH}/admin/statucon.css">
+</head>
+<body>
+    <h3>
+        文章标题：{$result[0]["htitle"]}
+    </h3>
+    <p class="info">
+        <span>时间：{$result[0]["htime"]}</span>
+    </p>
+    <div class="content">
+        {$result[0]["hcontent"]}
+    </div>
+</body>
+</html>

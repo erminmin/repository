@@ -1,0 +1,78 @@
+html,body{
+	width: 100vw;
+	height: 100vh;
+}
+.ljj_bg{
+	width: 7.5rem;
+	height: 13.34rem;
+	background-image:url(../../images/bg.png);
+	background-position: center;
+	background-size: 7.5rem 13.34rem;
+	background-color:#000 ;
+	position: relative;
+}
+.ljj_bg_dw{
+	position: absolute;
+	left: 0;top: 0;
+	width: 100%;height: 100%;
+	background: rgba(0,0,0,.5);
+}
+.ljj_shose_box{
+	position: absolute;
+	left: 0;top:0;bottom:0;right: 0;
+	margin: auto;
+	width: 5.45rem;
+	height: 3.63rem;
+	background-image:url(../../images/fx.png);
+	background-position: -0.10rem -1.5rem;
+	background-size:6.94rem 6.34rem;
+	background-repeat: no-repeat;	
+}
+.ljj_shose{
+	position: absolute;
+	left: 1.86rem;top:0rem;
+	width: 1.57rem;
+	height: 1.29rem;
+	background-image:url(../../images/fx.png);
+	background-position: -4.03rem -0.24rem;
+	background-size:6.94rem 6.34rem;
+	background-repeat: no-repeat;	
+}
+.ljj_shose_bottom{
+	position: absolute;
+	bottom: 0.5rem;left: 0;
+	width: 100%;height: 0.8rem;	
+	list-style: none;
+}
+.ljj_shose_bottom>li{
+	float: left;
+	list-style: none;
+}
+.ljj_qq{
+	margin-left:0.75rem ;
+	width: 0.8rem;height: 0.8rem;
+	background-image:url(../../images/fx.png) ;
+	background-position: -2.80rem -0.02rem;
+	background-size:6.94rem 6.34rem;
+	margin-right: 0.45rem;
+}
+.ljj_weibo{
+	width: 0.8rem;height: 0.8rem;
+	background-image:url(../../images/fx.png) ;
+	background-position: -1.17rem -0.02rem;
+	background-size:6.94rem 6.34rem;
+	margin-right: 0.45rem;
+}
+.ljj_weixin{
+	width: 0.8rem;height: 0.8rem;
+	background-image:url(../../images/fx.png) ;
+	background-position: -1.98rem -0.02rem;
+	background-size:6.94rem 6.34rem;
+	margin-right: 0.35rem;
+}
+.ljj_point{
+	width: 0.5rem;height: 0.8rem;
+	background-image:url(../../images/fx.png) ;
+	background-position: -0.36rem -0.02rem;
+	background-size:6.94rem 6.34rem;
+}

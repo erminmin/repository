@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{CSS_PATH}/admin/addsort.css">
+</head>
+<body>
+	<form action="index.php?m=admin&f=sort&a=addsortInfo" method="post">
+    	已有分类：<select name="sort" id="addsort">
+
+        {foreach $sort as $v}
+        <option value="{$v['sid']}">{$v['sname']}</option>
+        {/foreach}
+
+    </select><br/>
+        分类名称：<input type="text" name="sname"class="addsort"><br/>
+        <input type="submit" value="添加" class="tianjia">
+    </form>
+</body>
+</html>

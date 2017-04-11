@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{CSS_PATH}/bootstrap.min.css">
+    <style>
+        .page{
+            text-align:Center;
+            line-height:50px;
+        }
+        .page a{
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+        <table class="table text-center">
+            <tr>
+                <th>id</th> 
+                <th>分类</th>
+                <th>商品图片</th>
+                <th>商品标题</th>
+                <th>商品名称</th>
+                <th>商品成新</th>
+                <th>发布者</th>
+                <th>收货地址</th>
+                <th>价格</th>
+                <th>商品介绍</th>
+                <th>发布时间</th>
+                <th>编辑</th>
+            </tr>
+            <!--
+            select * from shows inner join user on shows.uid=user.uid;
+            -->
+            {foreach  $result as $v}
+            <tr>
+                <td>{$v["cid"]}</td>
+                <td>{$v["sid"]}</td>
+                <td>{$v["cimgurl"]}</td>
+                <td>{$v["ctitle"]}</td>
+                <td>{$v["cname"]}</td>
+                <td>{$v["cnew"]}</td>
+                <td>{$v["uid"]}</td>
+                <td>{$v["caddress"]}</td>
+                <td>{$v["cprice"]}</td>
+                <td>{$v["cintroduce"]}</td>
+                <td>{$v["ctime"]}</td>
+                <td>
+                    <a href="index.php?m=admin&f=commodity&a=statucom&cid={$v['cid']}">查看</a>
+                    <a href="index.php?m=admin&f=commodity&a=delcom&cid={$v['cid']}">删除</a>
+                </td>
+            </tr>
+
+            {/foreach}
+
+
+        </table>
+
+        <div class="page">
+            {$pages}
+        </div>
+
+</body>
+</html>

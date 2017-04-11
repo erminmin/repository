@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="{CSS_PATH}/admin/public.css">
+    <link rel="stylesheet" href="{CSS_PATH}/admin/index.css">
+</head>
+
+<script src="{JS_PATH}/jquery-min.js"></script>
+<script src="{JS_PATH}/admin/index.js"></script>
+
+<body>
+<div class="header">
+    <h2>{$username}，欢迎来到内容管理系统！</h2>
+</div>
+<div class="bottom">
+    <div class="left">
+        <ul>
+            <li>
+                <span class="opi"><i></i>主页 <b></b></span>
+                <ul class="son">
+                    <li><a href="index.php" target="_blank">打开主页</a></li>
+                </ul>
+            </li>
+            <li>
+                <span class="opi"><i></i>用户管理<b></b></span>
+                <ul class="son">
+                    <li><a href="index.php?m=admin&f=user&a=addUser" target="right">添加用户</a></li>
+                    <li><a href="index.php?m=admin&f=user&a=select" target="right">管理用户</a></li>
+                </ul>
+            </li>
+            <li>
+                <span class="opi"><i></i>头条文章<b></b></span>
+                <ul class="son">
+                    <li><a href="index.php?m=admin&f=headline&a=addheadline" target="right">添加文章</a></li>
+                    <li><a href="index.php?m=admin&f=headline&a=showheadline" target="right">管理文章</a></li>
+                </ul>
+            </li>
+            <li>
+                <span class="opi"><i></i>分类管理<b></b></span>
+                <ul class="son">
+                    <li><a href="index.php?m=admin&f=sort&a=addsort" target="right">添加分类</a></li>
+                    <li><a href="index.php?m=admin&f=sort&a=showsort" target="right">管理分类</a></li>
+                </ul>
+            </li>
+            <li>
+                <span class="opi"><i></i>商品管理<b></b></span>
+                <ul class="son">
+                    <li><a href="index.php?m=admin&f=commodity&a=addcom" target="right">添加商品</a></li>
+                    <li><a href="index.php?m=admin&f=commodity&a=showcom" target="right">管理商品</a></li>
+                </ul>
+            </li>
+                <h5><a href="index.php?m=admin&a=unLogin">退出登录</a></h5>
+        </ul>
+
+    </div>
+    <div class="right">
+        <iframe src="" frameborder="0" name="right">
+
+        </iframe>
+    </div>
+</div>
+</body>
+</html>

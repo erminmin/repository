@@ -1,0 +1,197 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+html,body,ul,li,p,a{
+	padding: 0;
+	margin: 0;
+	font-family: "苹方";
+	list-style: none;
+}
+/*顶部 start*/
+.hby_topbox{
+	width: 7.5rem;
+	height: 1.44rem;
+	background: #FFC019;
+	margin-top: 0.4rem;
+	text-align: center;
+	font-weight: blod;
+}
+.hby_topbox p:nth-child(1){
+	width: 100%;
+	margin-bottom: 0.1rem;
+	padding-top: 0.22rem;
+	text-align: center;
+	font-size: 0.28rem;
+	height: 0.28rem;
+}
+.hby_topbox p:nth-child(2){
+	width: 100%;
+	font-size: 0.16rem;
+}
+.hby_dingwei{
+	width: 7.02rem;
+	height: 0.93rem;
+	background: rgba(0,0,0,.8);
+	border-radius: 5px;
+	position: absolute;
+	left: 0.24rem;
+	top: 1.41rem;
+	z-index: 1;
+}
+.hby_dingwei input{
+	width: 3rem;
+	height: 0.49rem;
+	position: absolute;
+	left: 0.48rem;
+	top: 0.22rem;
+	background: rgba(0,0,0,0);
+	border: 0;
+	color: #BFBFC1;
+}
+.hby_dian{
+	width: 0.05rem;
+	height: 0.05rem;
+	border-radius: 50%;
+	position: absolute;
+	top: 0.44rem;
+}
+.hby_dian:nth-child(1){
+	background: #fab52a;
+	left: 0.22rem;
+}
+.hby_dian:nth-child(2){
+	background: #19b12b;
+	left: 0.30rem;
+}
+.hby_line{
+	width: 6.58rem;
+	height: 0.02rem;
+	background: #ccc;
+	position: absolute;
+	left: 0.22rem;
+	bottom: 0.2rem;
+}
+.hby_linel{
+	width: 0.14rem;
+	height: 0.04rem;
+	background: #ccc;
+	position: absolute;
+	left: 0;
+	top: -0.01rem;
+}
+.hby_liner{
+	width: 0.14rem;
+	height: 0.04rem;
+	background: #ccc;
+	position: absolute;
+	right: 0;
+	top: -0.01rem;
+}
+.hby_yuyin{
+	width: 0.77rem;
+	height: 0.36rem;
+	background: #ccc;
+	border-radius: 15px;
+	position: absolute;
+	right: 0.23rem;
+	top: 0.22rem;
+}
+/*顶部 end*/
+/*详情 start*/
+.hby_xiangqing{
+	width:7.5rem;
+	height: 100%;
+	background: linear-gradient(#fbfbfb,#f0eeef);
+	position: relative;
+}
+.hby_box{
+	padding-top: 0.73rem;	
+	padding-left: 0.14rem;
+	position: absolute;
+}
+.hby_list1{
+	width: 3.45rem;
+	height: 5.75rem;
+	border-radius: 0.1rem;
+	box-shadow: 0 0 0.15rem rgba(0,0,0,0.3);
+	background: #FFFFFF;
+	float: left;
+	margin-left: 0.1rem;
+}
+.hby_list1 p{
+	font-size: 0.32rem;
+	font-weight: blod;
+	padding-left: 0.22rem;
+}
+.hby_list1 p:nth-child(3){
+	font-size: 0.22rem;
+	font-weight: 500;
+}
+.hby_bg{
+	display: block;
+	width: 100%;
+	height: 3.5rem;
+	background: url(../../images/9.png);
+	background-size:cover ;
+}
+.hby_list1 div{
+	font-size: 0.28rem;
+	margin-left: 0.24rem;
+	color: #cacaca;
+}
+.hby_list1 p.hby_jiage{
+	color: #ec1747;
+	font-size: 0.32rem;
+	font-weight: 700;
+}
+.hby_jiage span{
+	font-size: 0.22rem;
+	padding-left: 0.03rem;
+}
+.hby_jiage span.hby_xihuanrenshu{
+	color: #707781;
+	font-size: 0.22rem;
+}
+.hby_jiage span.taoxin{
+	font-size: 0.22rem;
+	padding-left: 0.2rem;
+}
+.hby_shoucang{
+	width: 1.38rem;
+	height: 0.46rem;
+	border: 2px solid #fcc219;
+	border-radius: 2rem;
+	text-align: center;
+	line-height: 0.46rem;
+}
+li.hby_list2{
+	height: 7.2rem;
+}
+li.hby_list2 a{
+	background: url(../../images/10.png);
+	height: 4.9rem;
+	background-size:100% 100% ;
+}
+li.hby_list3{
+	height: 6.45rem;
+	position: absolute;
+	left: 0.12rem;top: 6.6rem;
+}
+li.hby_list3 a{
+	background: url(../../images/11.png);
+	height: 4.15rem;
+	background-size:100% 100% ;
+}
+li.hby_list4{
+	height: 6.4rem;
+	position: absolute;
+	right: 0;top: 8.03rem;
+}
+li.hby_list4 a{
+	background: url(../../images/12.png);
+	height: 4.15rem;
+	background-size:100% 100% ;
+}
+/*详情 end*/
