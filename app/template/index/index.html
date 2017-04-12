@@ -11,18 +11,48 @@
 <body>
 <div class="header">
     <img src="{IMG_PATH}/hearder.png" alt="" class="header-img">
+    <div class="search">
+        <div class="dian"></div>
+        <div class="dian"></div>
+        <input type="text" placeholder="Search for..." />
+
+            <img src="{IMG_PATH}/music_03.png" alt="" class="yuyin">
+
+        <div class="line">
+            <div class="linel"></div>
+            <div class="liner"></div>
+        </div>
+    </div>
 </div>
-<div class="search"></div>
 <div class="top">
     <img class="top-img" src="{IMG_PATH}/index-top.jpg" alt="">
 </div>
 <div class="hot">
     <div class="top-box">
-        <div class="top-box-img"></div>
-        <div class="top-box-title">{$headline["htitle"]}</div>
-        <div class="top-box-text">{$headline["hcontent"]}</div>
-        <div class="top-box-address">{$headline["haddress"]}</div>
-        <div class="top-box-time">{$headline["htime"]}</div>
+        <div class="top-box-img"><img src="{IMG_PATH}/index-hot.png" alt=""></div>
+        <div class="top-box-info">
+            <div class="top-box-title">{$headline["htitle"]}</div>
+            <div class="top-box-text">{$headline["hcontent"]}</div>
+            <div class="top-box-line"></div>
+            <div class="top-box-message">
+                <div class="img">
+                    <img src="{IMG_PATH}/index_addres.png" alt="">
+                    <span class="top-box-address">{$headline["haddress"]}</span>
+                </div>
+                <div class="img">
+                    <img src="{IMG_PATH}/index_time.png" alt="">
+                    <span class="top-box-time">{$headline["htime"]}</span>
+                </div>
+                <div class="num">
+                    <img src="{IMG_PATH}/user1_03.png" alt="" class="img1">
+                    <img src="{IMG_PATH}/user2_03.png" alt="" class="img2">
+                    <img src="{IMG_PATH}/user3_03.png" alt="" class="img3">
+                    <div class="more">{$headline["hhit"]}</div>
+                </div>
+
+
+            </div>
+        </div>
     </div>
     <div class="top-box box2"></div>
     <div class="top-box box3"></div>
@@ -48,16 +78,23 @@
     </div>
     <div class="change-box">
     {foreach $sortlist $s}
-            <a class="box-body" href="index.php?m=index&f=sort&a=sortshow&sid={$s['sid']}"></a>
+        <a class="box-body" href="index.php?m=index&f=sort&a=sortshow&sid={$s['sid']}">
+            <p>{$s['stitle']}</p>
+            <p>{$s['sinfo']}</p>
+            <p>{$s['scon']}</p>
+        </a>
         <div class="box-body"></div>
     {/foreach}
     </div>
 </div>
     <!-- 选项卡 -->
-<!--     <a href="index.php">1</a>
-    <a href="index.php?m=index&f=sort">2</a>
-    <a href="index.php?m=index&f=art&a=artshow&sid={$s['sid']}">3</a>
-    <a href="index.php?m=index&f=art&a=artshow&sid={$s['sid']}">4</a> -->
+
+    <!--<a href="index.php">1</a>-->
+    <!--<a href="index.php?m=index&f=sort">2</a>-->
+    <!--<a href="index.php?m=index&f=art&a=artshow&sid={$s['sid']}">3</a>-->
+    <!--<a href="index.php?m=index&f=art&a=artshow&sid={$s['sid']}">4</a>-->
+
+
 </body>
 <script src="js/index/index.js"></script>
 </html>
